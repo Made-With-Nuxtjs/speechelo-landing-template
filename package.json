@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "a": "nuxt dev -o --port",
+    "u": "pnpm update",
+    "d": "npx nuxthub deploy",
+    "n": "pnpm dlx nuxi upgrade"
+  },
+  "dependencies": {
+    "@nuxt/scripts": "0.9.5",
+    "nuxt": "^3.14.1592",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@tailwindcss/typography": "^0.5.15",
+    "sass-embedded": "^1.82.0"
+  }
+}
