@@ -3,50 +3,25 @@ useSeoMeta({
     title: 'Text To Speech Software, Transforming Text to Voice Instantly -  Speechelo',
 })
 
+
+
 const isLoaded = ref(false)
 const isPlaying = ref(false)
 const video = ref()
 async function play() {
-    await video.value.player.playVideo()
+    await video.value.play()
 }
-function stateChange(event: any) {
-    isPlaying.value = event.data === 1
-}
-
-export interface YouTubeProps {
-    videoId: string;
-    playerVars?: YT.PlayerVars;
-    width?: number;
-    height?: number;
-}
-
-// Example props with default values
-const youTubeProps: YouTubeProps = {
-    videoId: 'd_IFKP1Ofq0',
-    playerVars: {
-        autoplay: 1,
-        controls: 1,
-    },
-    width: 750, // Optional width
-    height: 360, // Optional height
-};
-
-// const isLoaded = ref(false);
-
-// const stateChange = (state: YT.PlayerState) => {
-//     console.log('Player state changed:', state);
-// };
 
 </script>
 
 <template>
     <main>
         <!-- Hero Section -->
-        <section class="bg-section_banner min-h-screen">
+        <section class="bg-section_banner  h-full-screen">
             <div class="xl:px-96">
                 <div class="flex justify-center items-center p-4 md:lg:xl:p-6">
                     <div class="bg-gradient-to-r from-[#FF416C] to-[#FF4B2B] text-white font-semibold px-4 rounded">
-                        <h3 class="text-sm md:lg:xl:text-lg font-custom text-gray-50 text-center p-2">NEW
+                        <h3 class="text-xs md:lg:xl:text-lg font-custom text-gray-50 text-center p-2">NEW
                             AI Text To Voice Tool</h3>
                     </div>
                 </div>
@@ -64,7 +39,7 @@ const youTubeProps: YouTubeProps = {
                         We GUARANTEE no one will tell your voiceover is A.I. generated with a text to voice tool</p>
                 </div>
 
-                <div class="px-4 md:lg:xl:px-48">
+                <div class="px-8 md:lg:xl:px-48">
                     <div class="bg-green-700 flex justify-center p-1 md:lg:xl:pt-2">
                         <p class="text-white uppercase text-center text-xs md:lg:xl:text-sm">Click the
                             <span class="font-bold px-1">Play Button Below</span> To Find Out More
@@ -72,77 +47,111 @@ const youTubeProps: YouTubeProps = {
                     </div>
                     <div class="w-full border-4 border-green-700">
                         <div class="flex items-center justify-center">
-                            <!-- <iframe src="https://www.youtube.com/embed/msizPweg3kE" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe> -->
-                            <ScriptYouTubePlayer ref="video" :video-id="youTubeProps.videoId"
-                                :player-vars="youTubeProps.playerVars" :width="youTubeProps.width"
-                                :height="youTubeProps.height" @ready="isLoaded = true" @state-change="stateChange">
+                            <ScriptVimeoPlayer :id="331567154" ref="video" class="group" @loaded="isLoaded = true"
+                                @play="isPlaying = true" @pause="isPlaying = false">
                                 <template #awaitingLoad>
                                     <div
-                                        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[48px] w-[68px]">
-                                        <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+                                        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 group-hover:bg-red-700 transition rounded px-6 py-2">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" class="w-10 h-10 text-white"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                                                fill="#f00" />
-                                            <path d="M 45,24 27,14 27,34" fill="#fff" />
+                                                d="M19 12C19 12.3557 18.8111 12.6846 18.5039 12.8638L6.50387 19.8638C6.19458 20.0442 5.81243 20.0455 5.50194 19.8671C5.19145 19.6888 5 19.3581 5 19L5 5C5 4.64193 5.19145 4.3112 5.50194 4.13286C5.81243 3.95452 6.19458 3.9558 6.50387 4.13622L18.5039 11.1362C18.8111 11.3154 19 11.6443 19 12Z"
+                                                fill="currentColor" />
                                         </svg>
                                     </div>
                                 </template>
-                            </ScriptYouTubePlayer>
+                            </ScriptVimeoPlayer>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="flex justify-center px-1 md:lg:xl:px-52 py-4">
-                    <div class="text-white h-96">
-                        <ul class="list-none space-y-6 my-4 font-semibold">
+                <div class="flex flex-col md:flex-row justify-center gap-8 md:lg:xl:px-52 pt-8 px-8 pb-4">
+                    <div class="flex-1 text-gray-50">
+                        <ul class="list-none space-y-6 font-semibold">
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-lg">Generate voice from text</p>
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg">Generate voice from text</p>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg"> <span class="text-orange-400">Male & Female</span>
+                                    voices
+                                    included</p>
                             </li>
                             <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-lg"> Male & Female voices included</p>
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg">
+                                    The only text to voice tool that <span class="text-orange-400"> adds
+                                        inflections</span> in the voice
+                                </p>
                             </li>
-                            <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-lg">The only text to voice tool that adds inflections in the voice</p>
-                            </li>
-                            <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-lg"> Over 30 human-sounding voices</p>
+                            <li class="flex items-center gap-3">
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg">Over <span class="text-orange-400">30
+                                        human-sounding</span>
+                                    voices</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="text-white h-96">
-                        <ul class="list-none space-y-6 my-4 font-semibold">
-                            <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-xl">Read the text in 3 ways: normal tone, joyful tone, serious tone.</p>
+                    <div class="hidden md:block">
+                        <div class="h-[25vh] w-[0.1vw] bg-gray-700"></div>
+                    </div>
+
+                    <div class="flex-1 text-gray-50">
+                        <ul class="list-none space-y-6 font-semibold">
+                            <li class="flex items-center gap-3">
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg">Read the text in <span class="text-orange-400">3
+                                        ways:</span> normal tone,
+                                    joyful tone, serious tone</p>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg">Works in <span class="text-orange-400"> [English]
+                                        and
+                                        23</span> other
+                                    languages</p>
                             </li>
                             <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-xl">  Works in [English] and 23 other languages</p>
-                            </li>
-                            <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-5 h-5" />
-                                <p class="text-xl">Works with any video creation software: Camtasia, Adobe Premier, iMovie, Audacity, etc.</p>
+                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <p class="text-sm md:lg:xl:text-lg"><span class="text-orange-400">Works with any video
+                                        creation
+                                        software:</span>
+                                    Camtasia, Adobe Premier,
+                                    iMovie, Audacity,
+                                    etc.</p>
                             </li>
                         </ul>
-                        
                     </div>
                 </div>
-                <div class="h-[800px]">
-                    -------
-                </div>
-
-
+                <AnimateArrowBtn />
             </div>
-
-
         </section>
+
+        <!-- Second Section -->
+        <section
+            class="bg-[url('https://speechelo.com/images2/section3.png')] bg-gray-100 h-full-screen bg-center bg-no-repeat">
+            
+                <SpecialOffer />
+           
+        </section>
+
+        <!-- Three Steps Section -->
+        <section
+            class="bg-[url('https://speechelo.com/images2/section10.png')] h-full bg-center bg-no-repeat">
+            <Steps />
+        </section>
+
+        <!-- use Speechelo Section -->
+        <section
+            class="bg-[url('https://speechelo.com/images2/section12.jpg')] h-screen bg-center bg-no-repeat">
+            <UseOfSpeechelo />
+        </section>
+        
+         <!--Demo Voices Section -->
+         <section>
+            <DemoVoices />
+        </section>
+
     </main>
-
-
 </template>
