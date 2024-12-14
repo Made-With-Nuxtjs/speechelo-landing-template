@@ -131,26 +131,60 @@ async function play() {
         <!-- Second Section -->
         <section
             class="bg-[url('https://speechelo.com/images2/section3.png')] bg-gray-100 h-full-screen bg-center bg-no-repeat">
-            
-                <SpecialOffer />
-           
+
+            <SpecialOffer />
+
         </section>
 
         <!-- Three Steps Section -->
-        <section
-            class="bg-[url('https://speechelo.com/images2/section10.png')] h-full bg-center bg-no-repeat">
+        <section class="bg-[url('https://speechelo.com/images2/section10.png')] h-full bg-center bg-no-repeat">
             <Steps />
         </section>
 
         <!-- use Speechelo Section -->
-        <section
-            class="bg-[url('https://speechelo.com/images2/section12.jpg')] h-screen bg-center bg-no-repeat">
+        <section class="bg-[url('https://speechelo.com/images2/section12.jpg')] h-full bg-center bg-no-repeat">
             <UseOfSpeechelo />
         </section>
-        
-         <!--Demo Voices Section -->
-         <section>
+
+        <!--Demo Voices Section -->
+        <section class="bg-gray-100">
             <DemoVoices />
+        </section>
+
+        <!--Full List Of Our Voices Section -->
+        <section class="bg-gray-100">
+            <ListOfOurVoices />
+        </section>
+
+
+        <!-- Generate A Voiceover Section -->
+        <section class="bg-[url('https://speechelo.com/images2/section15.jpg')] h-full-screen bg-center bg-no-repeat">
+            <GenerateAVoiceover />
+        </section>
+
+        <!--UNMATCHED FEATURES Section -->
+        <section class="bg-gray-50">
+            <UnmatchedFeatures />
+        </section>
+
+        <!--Guaranteed Section -->
+        <section class="bg-[#1e1242]">
+            <Guaranteed />
+        </section>
+
+        <!-- Most Popular Section -->
+        <section
+            class="bg-[url('https://speechelo.com/images2/section21.jpg')] bg-gray-200 h-full-screen bg-center bg-no-repeat">
+            <MostPopular />
+        </section>
+
+        <!--FAQ Section -->
+        <section class="bg-[#1e1242]">
+            <FAQ />
+        </section>
+
+        <section class="bg-gray-50 h-96">
+            
         </section>
 
     </main>

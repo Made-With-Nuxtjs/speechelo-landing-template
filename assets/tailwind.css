@@ -33,3 +33,9 @@ h6 {
 .offer-box{
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+
+.card-money-back{
+  background-color: rgb(46, 37, 78);
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 24px 40px 0px;
+    border-radius: 12px;
+}

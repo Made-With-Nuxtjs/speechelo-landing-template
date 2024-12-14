@@ -1,8 +1,8 @@
 <template>
     
-    <nav class="bg-white border-b border-gray-200 sticky top-0">
+    <nav class="bg-white border-b border-gray-200">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-32 xl:px-32">
-      <div class="flex justify-between items-center h-16">
+      <div class="flex justify-between items-center h-20">
         <!-- Logo -->
        
           <a href="/">

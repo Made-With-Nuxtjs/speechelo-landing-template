@@ -139,7 +139,7 @@
 
             <!-- Text Section -->
             <div class="basis-full md:lg:xl:basis-1/2 order-2 md:lg:xl:order-none">
-                <div class="p-4 md:lg:xl:p-16">
+                <div class="px-4 md:lg:xl:p-16">
                     <h3 class="text-gray-50 font-bold text-3xl md:lg:xl:text-5xl pb-4">Generate & Download</h3>
                     <div class="flex flex-col gap-4 md:lg:xl:gap-8">
                         <p class="text-gray-50 text-sm md:text-xl">
