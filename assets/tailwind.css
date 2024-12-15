@@ -39,3 +39,18 @@ h6 {
     box-shadow: rgba(0, 0, 0, 0.23) 0px 24px 40px 0px;
     border-radius: 12px;
 }
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-20%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.custom-bounce {
+  animation: bounce 1.6s infinite; /* Slightly slower for better readability */
+}

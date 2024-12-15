@@ -1,12 +1,12 @@
 <template>
     <!-- Title -->
-    <div class="container mx-auto px-1 md:lg:xl:px-32 pt-16">
+    <div class="container mx-auto px-4 md:lg:xl:px-32 pt-8 md:lg:xl:py-16">
         <!-- Title Section -->
         <div class="flex flex-row">
             <div class="basic-1/4 mx-auto">
                 <div class="md:lg:xl:w-[600px]">
                     <div class="bg-[#1c1448] rounded-t-xl h-96 w-full relative">
-                        <div class="flex justify-center py-8">
+                        <div class="flex justify-center md:lg:xl:py-8 py-16">
                             <NuxtImg src="/img/tableCover.png" title="special offer" alt="special-offer"
                                 class="w-full" />
                         </div>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="border-2 bg-white">
+                <div class="rounded-b-lg shadow-xl bg-white">
                     <div class="flex justify-center py-8">
                         <a href="/">
                             <h3 class="font-bold">YES, I UNDERSTAND THAT:</h3>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="flex gap-8 px-8">
                         <div class="max-w-lg mx-auto">
-                            <ul class="space-y-4 text-lg">
+                            <ul class="space-y-4 text-sm md:lg:xl:text-lg">
                                 <li class="flex items-start gap-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                         class="text-green-500 text-xl w-6 h-6" fill="currentColor">
@@ -89,12 +89,12 @@
                             </ul>
 
 
-                            <div class="mt-8 p-2 mx-20 border-dotted border-2 border-gray-400 text-center">
+                            <div class="mt-8 p-2 md:lg:xl:mx-20 border-dotted border-2 border-gray-400 text-center">
                                 <span class="font-bold text-gray-900">Founders Special Offer: $53 Discount</span>
                             </div>
                             <div class="mt-8 text-center">
-                                <p class="text-xl md:lg:xl:text-3xl font-bold">ONE TIME PAYMENT:</p>
-                                <p class="text-xl md:lg:xl:text-3xl font-bold">ONLY $47</p>
+                                <p class="text-lg md:lg:xl:text-3xl font-bold">ONE TIME PAYMENT:</p>
+                                <p class="text-lg md:lg:xl:text-3xl font-bold">ONLY $47</p>
                             </div>
                             <div class="flex justify-center items-center p-8">
                                 <div
@@ -114,10 +114,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </div>
-    <AnimateArrowBtn />
 </template>

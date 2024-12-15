@@ -26,19 +26,19 @@
                 <!-- Image -->
                 <div class="flex justify-center">
                     <NuxtImg src="/img/voiceover1.png" title="Sales Video Image" alt="Sales Video"
-                        class="w-full max-w-md" />
+                        class="w-full" />
                 </div>
             </div>
 
             <!-- Training Videos Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div class="grid grid-cols-1 md:lg:xl:grid-cols-2 items-center gap-8">
                 <!-- Image -->
-                <div class="flex justify-center md:order-last">
+                <div class="flex justify-center">
                     <NuxtImg src="/img/voiceover2.png" title="Training Video Image" alt="Training Video"
-                        class="w-full max-w-md" />
+                        class="w-full" />
                 </div>
                 <!-- Text Content -->
-                <div class="flex flex-col gap-4 md:gap-6">
+                <div class="flex flex-col gap-4 md:gap-6 md:lg:xl:pl-8">
                     <h3 class="text-gray-800 text-2xl md:text-3xl font-bold">
                         Training Videos
                     </h3>
@@ -51,9 +51,9 @@
             </div>
         </div>
 
-        <div class="flex justify-center p-2">
+        <div class="flex justify-center">
             <h5 class="text-2xl font-bold">or for any type of video!</h5>
         </div>
+        <AnimateArrowBtn />
     </div>
-    <AnimateArrowBtn />
 </template>

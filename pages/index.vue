@@ -163,7 +163,7 @@ async function play() {
         </section>
 
         <!--UNMATCHED FEATURES Section -->
-        <section class="bg-gray-50">
+        <section class="bg-gray-50 shadow-t-xl">
             <UnmatchedFeatures />
         </section>
 
@@ -179,12 +179,14 @@ async function play() {
         </section>
 
         <!--FAQ Section -->
-        <section class="bg-[#1e1242]">
+        <section class="bg-[#1a1135]">
             <FAQ />
         </section>
 
-        <section class="bg-gray-50 h-96">
-            
+       <!--Comment Review Section -->
+       <section
+            class="bg-[url('https://speechelo.com/images2/section4a.png')] bg-gray-200 h-full-screen bg-center bg-no-repeat">
+            <Testimonial />
         </section>
 
     </main>
