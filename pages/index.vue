@@ -69,24 +69,24 @@ async function play() {
                     <div class="flex-1 text-gray-50">
                         <ul class="list-none space-y-6 font-semibold">
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg">Generate voice from text</p>
                             </li>
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg"> <span class="text-orange-400">Male & Female</span>
                                     voices
                                     included</p>
                             </li>
                             <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg">
                                     The only text to voice tool that <span class="text-orange-400"> adds
                                         inflections</span> in the voice
                                 </p>
                             </li>
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg">Over <span class="text-orange-400">30
                                         human-sounding</span>
                                     voices</p>
@@ -100,20 +100,20 @@ async function play() {
                     <div class="flex-1 text-gray-50">
                         <ul class="list-none space-y-6 font-semibold">
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg">Read the text in <span class="text-orange-400">3
                                         ways:</span> normal tone,
                                     joyful tone, serious tone</p>
                             </li>
                             <li class="flex items-center gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg">Works in <span class="text-orange-400"> [English]
                                         and
                                         23</span> other
                                     languages</p>
                             </li>
                             <li class="flex gap-3">
-                                <NuxtImg src="/img/check1.png" title="company-logo" alt="logo-image" class="w-6 h-6" />
+                                <NuxtImg src="/img/check1.png" title="icon" alt="icon-image" class="w-6 h-6" />
                                 <p class="text-sm md:lg:xl:text-lg"><span class="text-orange-400">Works with any video
                                         creation
                                         software:</span>

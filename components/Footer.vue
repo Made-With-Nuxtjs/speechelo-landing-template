@@ -8,14 +8,14 @@
                 <div class="w-full md:w-1/4 flex flex-col gap-6">
                     <a href="/">
                         <NuxtImg src="https://placehold.co/200x50" title="company-logo" alt="logo-image"
-                            class="w-[200px] h-auto" />
+                            class="w-[200px] h-[60px]" />
                     </a>
                     <div class="flex gap-4">
                         <a href="/" class="bg-gray-100 rounded-full p-3 w-10 h-10">
                             <NuxtImg src="/img/fb-icon.png" title="facebook-icon" alt="facebook-icon" class="w-6" />
                         </a>
                         <a href="/" class="bg-gray-100 rounded-full p-3 w-10 h-10">
-                            <NuxtImg src="/img/vsyoutube.png" title="facebook-icon" alt="facebook-icon" class="w-6" />
+                            <NuxtImg src="/img/vsyoutube.png" title="youtube" alt="youtube" class="w-6" />
                         </a>
                     </div>
                 </div>

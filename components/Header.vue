@@ -19,9 +19,11 @@
           <a href="#" class="text-sm font-semibold text-gray-700 hover:text-orange-600">Blog</a>
           <a href="#" class="text-sm font-semibold text-gray-700 hover:text-orange-600">Support</a>
           <a href="#"
-            class="bg-[#6fad6a] Box Shadow Outset text-sm font-semibold text-white px-4 py-1 rounded-md hover:bg-[#6fad6a]">
+            class="bg-[#6fad6a] text-sm font-semibold text-white px-4 py-1 rounded-sm shadow-md hover:shadow-[5px_8px_rgb(183,188,190)] transition-all duration-300">
             Order Now
           </a>
+
+
         </div>
 
         <!-- Mobile Menu Button -->

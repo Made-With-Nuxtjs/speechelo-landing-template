@@ -24,7 +24,7 @@
                             <h3 class="font-bold">YES, I UNDERSTAND THAT:</h3>
                         </a>
                     </div>
-                    <div class="flex gap-8 px-8">
+                    <div class="flex gap-8 px-4">
                         <div class="max-w-lg mx-auto">
                             <ul class="space-y-4 text-sm md:lg:xl:text-lg">
                                 <li class="flex items-start gap-4">
@@ -89,8 +89,8 @@
                             </ul>
 
 
-                            <div class="mt-8 p-2 md:lg:xl:mx-20 border-dotted border-2 border-gray-400 text-center">
-                                <span class="font-bold text-gray-900">Founders Special Offer: $53 Discount</span>
+                            <div class="mt-8 py-1 px-1 md:lg:xl:mx-20 border-dotted border-2 border-gray-400 text-center">
+                                <span class="text-gray-900">Founders Special Offer: <span class="font-bold">$53 Discount</span> </span>
                             </div>
                             <div class="mt-8 text-center">
                                 <p class="text-lg md:lg:xl:text-3xl font-bold">ONE TIME PAYMENT:</p>

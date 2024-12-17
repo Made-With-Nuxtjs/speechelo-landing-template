@@ -22,12 +22,12 @@ function stateChange(event: { data: number; }) {
                 <h5 class="text-gray-900 text-xs md:lg:xl:text-xl font-semibold text-center p-2">
                     the #1 text to voice tool <span class="text-amber-500 font-bold">Watch The Demo Video Below!</span>
                 </h5>
-                <NuxtImg src="/img/arrow3.png" title="company-logo" alt="logo-image" class="hidden md:lg:xl:flex h-12 pt-3" />
+                <NuxtImg src="/img/arrow3.png" title="bello-image" alt="bello-icon" class="hidden md:lg:xl:flex h-12 pt-3" />
             </div>
 
             <div class="py-">
                 <div class="relative">
-                    <NuxtImg src="/img/video.png" title="company-logo" alt="logo-image" class="w-full" />
+                    <NuxtImg src="/img/video.png" title="impressive" alt="impressive" class="w-full" />
                     <div
                     class="absolute top-1/2 left-1/2 md:lg:xl:top-12 md:lg:xl:left-14 w-[48px] md:w-[68px] lg:xl:w-full h-[48px] md:h-[68px] lg:xl:h-full">
                         <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
