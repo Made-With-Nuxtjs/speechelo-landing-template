@@ -14,9 +14,9 @@ function stateChange(event: { data: number; }) {
     <!-- Title -->
     <div class="container mx-auto px-1 md:lg:xl:px-32">
         <!-- Title Section -->
-        <div class="flex md:lg:xl:pt-20 md:lg:xl:pb-8 md:lg:xl:px-24">
+        <div class="flex justify-center md:lg:xl:pt-20 md:lg:xl:pb-8 md:lg:xl:px-24">
             <h2
-                class="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-gray-950 capitalize leading-relaxed">
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-gray-950 capitalize leading-relaxed px-6">
                 Listen To Some
                 <span class="text-gray-850 font-bold">Breathtaking Demo Voices
                     From Speechelo:</span>
@@ -27,7 +27,7 @@ function stateChange(event: { data: number; }) {
         <div class="grid justify-center grid-cols-1 md:lg:xl:grid-cols-3 gap-4 md:lg:xl:gap-16 md:lg:xl:py-8 px-4">
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div
@@ -51,7 +51,7 @@ function stateChange(event: { data: number; }) {
 
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div
@@ -75,7 +75,7 @@ function stateChange(event: { data: number; }) {
 
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div
@@ -99,7 +99,7 @@ function stateChange(event: { data: number; }) {
 
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div
@@ -123,7 +123,7 @@ function stateChange(event: { data: number; }) {
             <!-- Text Content -->
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div
@@ -147,7 +147,7 @@ function stateChange(event: { data: number; }) {
 
             <div class="flex flex-col gap-4 justify-center">
                 <div>
-                    <ScriptYouTubePlayer ref="video" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
+                    <ScriptYouTubePlayer ref="video" style="height: 200px; width: 100%;" video-id="d_IFKP1Ofq0" @ready="isLoaded = true"
                         @state-change="stateChange">
                         <template #awaitingLoad>
                             <div

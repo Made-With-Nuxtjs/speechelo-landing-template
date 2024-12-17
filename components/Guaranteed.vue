@@ -1,8 +1,8 @@
 <template>
     <div class="container mx-auto md:lg:xl:px-72">
-        <div class="relative">
-            <NuxtImg src="/img/bg.png" title="image" alt="bg-image" />
-            <div class="card-money-back p-4 md:lg:xl:p-8 md:lg:xl:absolute md:lg:xl:top-10 md:lg:xl:left-10 w-full md:lg:xl:w-[800px] flex flex-col md:lg:xl:flex-row gap-8">
+        <div class="relative pt-10 md:lg:xl:pt-1">
+            <NuxtImg src="/img/bg.png" class="hidden md:lg:xl:flex" title="image" alt="bg-image" />
+            <div class="card-money-back p-4 md:lg:xl:p-8 md:lg:xl:absolute md:lg:xl:top-10 md:lg:xl:left-5 w-full md:lg:xl:w-[850px] flex flex-col md:lg:xl:flex-row gap-8">
                 <div class="flex justify-center">
                     <NuxtImg src="/img/moneyback.png" title="guarantee" class="w-64 md:lg:xl:w-96 items-center" alt="guarantee-image" />
                 </div>

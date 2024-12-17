@@ -47,7 +47,7 @@ async function play() {
                     </div>
                     <div class="w-full border-4 border-green-700">
                         <div class="flex items-center justify-center">
-                            <ScriptVimeoPlayer :id="331567154" ref="video" class="group" @loaded="isLoaded = true"
+                            <ScriptVimeoPlayer :id="331567154" ref="video" style="width: 100%;"class="group" @loaded="isLoaded = true"
                                 @play="isPlaying = true" @pause="isPlaying = false">
                                 <template #awaitingLoad>
                                     <div
@@ -131,9 +131,7 @@ async function play() {
         <!-- Second Section -->
         <section
             class="bg-[url('https://speechelo.com/images2/section3.png')] bg-gray-100 h-full-screen bg-center bg-no-repeat">
-
             <SpecialOffer />
-
         </section>
 
         <!-- Three Steps Section -->
@@ -156,9 +154,8 @@ async function play() {
             <ListOfOurVoices />
         </section>
 
-
         <!-- Generate A Voiceover Section -->
-        <section class="bg-[url('https://speechelo.com/images2/section15.jpg')] h-full-screen bg-center bg-no-repeat">
+        <section class="bg-[url('https://speechelo.com/images2/section15.jpg')] h-full bg-center bg-no-repeat">
             <GenerateAVoiceover />
         </section>
 

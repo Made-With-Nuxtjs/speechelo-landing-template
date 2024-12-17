@@ -1,6 +1,6 @@
 <template>
     <!-- Title -->
-    <div class="container mx-auto px-4 md:lg:xl:px-32 pt-8 md:lg:xl:py-16">
+    <div class="container mx-auto px-4 md:lg:xl:px-32 py-6 md:lg:xl:py-16">
         <!-- Title Section -->
         <div class="flex flex-row">
             <div class="basic-1/4 mx-auto">

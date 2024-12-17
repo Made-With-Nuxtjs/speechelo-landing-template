@@ -12,16 +12,16 @@
     </div>
 
     <div class="sm:px-8 md:px-16 lg:px-32 xl:px-72 py-2">
-        <div class="bg-white offer-box">
+        <div class="bg-white rounded-md">
             <div class="flex flex-col md:flex-row">
                 <!-- Image Section -->
-                <div class="flex-1 px-16 py-2 md:lg:xl:py-20 flex justify-center">
+                <div class="flex-1 px-16 md:lg:xl:py-20 flex justify-center">
                     <NuxtImg src="https://placehold.co/300x350" title="Product" alt="product-image"
                         class="w-full h-[400px]" />
                 </div>
 
                 <!-- Content Section -->
-                <div class="flex-1 p-8 md:lg:xl:p-16 flex flex-col gap-6 justify-center">
+                <div class="flex-1 px-8 md:lg:xl:p-16 flex flex-col gap-6 justify-center">
                     <h3 class="text-3xl  md:lg:xl:text-5xl font-bold text-center">Special Offer</h3>
                     <h6 class="text-lg sm:text-xl text-center">One Time Payment | No Monthly Fees</h6>
                     <div class="px-2 md:lg:xl:px-16">
@@ -53,7 +53,7 @@
                                 Buy Now</h3>
                         </div>
                     </div>
-                    <div class="flex justify-center">
+                    <div class="flex justify-center pb-4 md:lg:xl:py-1">
                         <NuxtImg src="/img/compatible.png" title="compatible" alt="compatible"
                             class="w-80 h-12 text-center" />
                     </div>
